@@ -41,11 +41,11 @@ private:
 int
 main()
 {
-
-    for(int count_down=10; 0<=count_down; --count_down){
-        std::this_thread::sleep_for(std::chrono::seconds(1));
-        std::cout << count_down << std::endl;
-    }
+    // originally, waiting 10s here for initialization
+    // for(int count_down=10; 0<=count_down; --count_down){
+    //     std::this_thread::sleep_for(std::chrono::seconds(1));
+    //     std::cout << count_down << std::endl;
+    // }
     std::cout << "start" << std::endl;
     RTEvaluator evaluator;
     evaluator.run();
